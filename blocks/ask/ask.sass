@@ -1,0 +1,85 @@
+.ask
+  position: fixed
+  height: 100vh
+  width: 100%
+  min-width: 320px
+  max-width: 1920px
+  background: rgba(0, 0, 0, .6)
+  z-index: 100
+  display: none
+  justify-content: center
+  &--active
+    display: flex
+  &__block
+    width: 42em
+    height: 29em
+    margin-top: 7.2em
+    background: $light-color
+    position: relative
+  &__close
+    position: absolute
+    width: 2em
+    height: 2em
+    top: -2.5em
+    right: 0
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    div
+      height: 125%
+      width: 4px
+      background: $light-color
+      transform: rotateZ(-45deg)
+      transform-origin: top
+      &:last-of-type
+        transform: rotateZ(45deg)
+
+  &__head
+    height: 10em
+    background: blue
+    padding: 1.5em 0 0 2em
+    background: url('../img/popup_bg.jpg') no-repeat
+  &-head
+    @extend %head-block
+    &__title
+      @extend %head-title
+  &-form
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: wrap
+    padding-top: 0
+    box-sizing: border-box
+    input
+      font-size: 1em
+      width: 16.8em
+      height: 3.75em
+      margin: .8em
+      font-family: $secondary-font
+      // color: $form-color
+      padding: 0 1.6em
+      box-sizing: border-box
+      border: 1px solid $form-color
+      &:focus
+        outline: none
+    &__btn
+      width: 10.8em
+      height: 2.4em
+      background: $accent-color
+      color: $light-color
+      text-transform: uppercase
+      font-size: 1.5em
+      font-weight: 500
+      cursor: pointer
+      border: none
+      outline: none
+      position: relative
+      padding-right: 2em
+      &::after
+        content: ""
+        position: absolute
+        width: 1.4em
+        height: 1em
+        background: url('../img/icons/mail.png') no-repeat
+        top: .7em
+        right: 1.5em

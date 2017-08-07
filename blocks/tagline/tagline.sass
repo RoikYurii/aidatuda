@@ -1,0 +1,143 @@
+.tagline
+  +container()
+  position: relative
+  min-height: 700px
+  z-index: 2
+  align-items: flex-end
+  margin-bottom: 7.5em
+  &::before
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    top: -59%
+    left: -32%
+    border-top: 370px solid transparent
+    border-left: 1020px solid $main-color
+    border-bottom: 570px solid transparent
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    top: -75%
+    right: -33%
+    border-top: 740px solid transparent
+    border-right: 1310px solid $primary-color
+    border-bottom: 540px solid transparent
+    z-index: -1
+  &__title
+    position: absolute
+    top: -10%
+    left: 0
+    font-size: 3.125em
+    @extend %head-text
+    font-weight: 100
+    letter-spacing: .6px
+    span
+      color: $light-color
+      line-height: 1
+  &__airdivan
+    position: absolute
+    top: 5%
+    right: 5%
+    width: 37.5em
+    height: 14.5em
+  &__bag
+    position: absolute
+    top: 15%
+    right: 43%
+    width: 12.8em
+    height: 11.1em
+  &-about
+    display: flex
+    align-items: center
+    .about-head
+      @extend %head-block
+      width: 27%
+      display: flex
+      flex-flow: wrap
+      margin-right: 2em
+      &__title
+        @extend %head-title
+        span
+          @extend %head-text
+          font-size: 0.625em
+    &__slider
+    #slider
+      position: relative
+      width: 100%
+      min-height: 250px
+      margin: 0 auto
+      box-sizing: border-box
+      overflow-x: hidden
+      .slides
+        position: relative
+        padding: 0
+        margin: 0
+        list-style: none
+        height: 250px
+        &__img
+          float: left
+          height: 100%
+          margin-left: 0.5em
+          position: relative
+          overflow-y: hidden
+          &:hover
+            .slides__shade
+              bottom: 0
+              padding: 3em 0 6em 0
+        &__shade
+          display: flex
+          flex-flow: column
+          justify-content: space-between
+          position: absolute
+          left: 0
+          bottom: -80%
+          width: 100%
+          height: 100%
+          background: rgba(0, 0, 0, .5)
+          transition: all .3s
+          color: $light-color
+          text-align: center
+          padding: 0.6em 0 6em 0
+          box-sizing: border-box
+          font-family: $secondary-font
+          line-height: 1.2
+          span
+            text-transform: uppercase
+            font-size: 2em
+      .slider-nav
+        width: 27em
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 2em
+        transition: all .3s
+        &__line
+          position: relative
+          width: 24.5em
+          height: 0.8em
+          background: #dfe0e6
+        &__active
+          position: absolute
+          top: 0
+          left: 0
+          width: 25%
+          height: 100%
+          background: $primary-color
+          transition: all .3s
+        #prevSlide
+          width: 0.8em
+          height: 0.8em
+          background: url('../img/slider/arrow.png')
+          background-size: cover
+          cursor: pointer
+          transform: rotateZ(180deg)
+        #nextSlide
+          width: 0.8em
+          height: 0.8em
+          background: url('../img/slider/arrow.png')
+          background-size: cover
+          cursor: pointer

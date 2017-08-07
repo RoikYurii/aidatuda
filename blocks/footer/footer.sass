@@ -1,0 +1,54 @@
+.footer
+  background: $primary-color
+  width: 100%
+  max-width: 1920px
+  min-width: 320px
+  z-index: 5
+  &__container
+    +container(center)
+    height: 5em
+    align-items: center
+    box-sizing: border-box
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: -1130%
+      left: -33%
+      border-top: 1110px solid transparent
+      border-left: 300px solid $main-color
+      border-bottom: 0px solid transparent
+      z-index: -2
+    &::after
+      content: ""
+      position: absolute
+      top: -980%
+      right: -33%
+      border-top: 990px solid transparent
+      border-right: 515px solid $primary-color
+      border-bottom: 0px solid transparent
+      z-index: 2
+  &__contacts-phones
+    width: 33%
+    .contacts-phones
+      display: flex
+      font-family: $secondary-font
+      justify-content: space-between
+      color: $light-color
+      &__text
+        font-size: 1.5em
+      &__numbers
+        font-size: 1.5em
+        font-weight: 500
+      &__open
+        font-size: 1em
+        position: relative
+        top: 0.15em
+  &__logo
+    margin: 0 4.1em 0 4.6em
+  &__socials
+    width: 22%
+    margin-right: 11%
+    .socials
+      a
+      font-size: 1.5em

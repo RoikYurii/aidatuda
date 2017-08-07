@@ -1,0 +1,46 @@
+/***********************MEDIA QUERIES***********************/
+// $media-xlg: 1500px
+// $media-lg: 1239px
+// $media-md: 960px
+// $media-sm: 767px
+// $media-xs: 480px
+// $media-xxs: 320px
+
+/***********************COLORS & FONTS***********************/
+$main-font: "Bebas Neue", Helvetica, sans-serif
+$secondary-font: "Roboto", Helvetica, sans-serif
+$third-font: "Roboto Condensed", Helvetica, sans-serif
+$main-color: #e2d72f
+$primary-color: #23bad5
+$accent-color: #f6625e
+$light-color: #ffffff
+$dark-color: #5e5e5e
+$border-color: #dadada
+$text-color: #4f4f4f
+$form-color: #d5d5d5
+
+
+%head-block
+  position: relative
+  padding-left: 1.25em
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 5px
+    height: 100%
+    background: $accent-color
+%head-title
+  font-size: 5em
+  text-transform: uppercase
+  font-family: $main-font
+  color: $accent-color
+  line-height: 0.75
+  font-weight: 400
+%head-text
+  font-size: 0.625em
+  text-transform: uppercase
+  font-family: $main-font
+  color: $dark-color
+  line-height: 0.75

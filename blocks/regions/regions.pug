@@ -1,0 +1,45 @@
+mixin regions(regions)
+  +b.SECTION.regions
+    +b.DIV.regions-head-block
+      +e.SPAN.title Пункты выдачи
+    +b.DIV.regions-table
+      each region in regions 
+        +b.regions-table-item
+          +e.SPAN.name=region.name
+          +e.DIV
+            each city in region.cities
+              +e.DIV.city=city
+            +e.SPAN.more(value=region.id) Подробнее
+    each region in regions
+      +b.DIV.regions-details(id=region.id)
+        each contact in region.contacts
+          +b.DIV.regions-details-row
+            +e.DIV
+              +e.SPAN.city-title=contact.city
+              +e.SPAN.text=contact.type
+            +e.DIV
+              +e.DIV
+                +e.DIV.icon--adress
+                +e.SPAN.title Адрес
+              +e.SPAN.text=contact.adress
+            +e.DIV
+              +e.DIV
+                +e.DIV.icon--clock
+                +e.SPAN.title Режим работы
+              +e.SPAN.text=contact.wwtime
+              +e.SPAN.text=contact.wetime
+            +e.DIV
+              +e.DIV
+                +e.DIV.icon--phone
+                +e.SPAN.title телефон
+              +e.SPAN.text=contact.number
+    +b.regions-delivery
+      +e.DIV 
+        +e.SPAN.title Так же мы можем
+        +e.SPAN.text осуществить доставку с нашего склада ПВТ до Ваших дверей
+      +e.DIV 
+        +e.SPAN.title 300-400р.
+        +e.SPAN.text  Доставка по МОСКВЕ и СПБ  
+      +e.DIV 
+        +e.SPAN.title 150-200р.
+        +e.SPAN.text  Доставка в ДРУГИХ ГОРОДАХ со склада по городу

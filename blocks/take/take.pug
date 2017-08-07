@@ -1,0 +1,9 @@
+mixin take(items)
+  +b.SECTION.take
+    +b.DIV.take-head
+      +e.P.title Как быстро забрать<br><span>свой аэродиван</span></p>
+    +b.DIV.take-container
+      each item in items
+        +b.DIV.take-container-item
+          +e.DIV.circle(class="take-container-item__circle-" + item.class)
+          +e.P.title=item.text

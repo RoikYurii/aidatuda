@@ -1,0 +1,4 @@
+npm i --save-dev gulp-autoprefixer gulp-concat gulp-plumber gulp-pug gulp-sass
+ gulp-server-livereload
+ browser-sync gulp-clean-css gulp-if gulp-imagemin gulp-notify
+ gulp-uglify gulp-useref

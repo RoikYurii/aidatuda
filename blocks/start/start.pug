@@ -1,0 +1,14 @@
+mixin start()
+  +b.SECTION.start
+    +e.DIV.container
+      +e.IMG.bg-girl(src='img/girl.png')
+      +e.IMG.bg-man(src='img/man.png')
+      +e.IMG.bg-white(src='img/white_bg.png')
+      +b.DIV.start-head
+        +b.DIV.start-head-title
+          +e.H1.title Аэродиван
+          +e.P.text С которым действительно <br><span>комфортно</span>
+        +b.DIV.start-head-price
+          +e.P.text Качество может быть доступным <br><span>скидка 30%</span>
+          +e.DIV.price 1750 <span>руб.</span>
+            +e.P.old-price <span>2 500</span>руб.

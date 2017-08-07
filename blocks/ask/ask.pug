@@ -1,0 +1,15 @@
+mixin ask()
+  +b.SECTION.ask
+    +e.DIV.block
+      +e.DIV.head
+        +b.DIV.ask-head
+          +e.P.title Связь с нами
+      +e.DIV.close
+        +e.DIV
+        +e.DIV
+      +b.FORM.ask-form
+        +e.INPUT(placeholder="Телефон")
+        +e.INPUT(placeholder="ФИО")
+        +e.INPUT(placeholder="E-mail")
+        +e.INPUT(placeholder="РЕГИОН")
+        +e.BUTTON.btn(type="submit") Отправить

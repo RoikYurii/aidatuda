@@ -1,0 +1,151 @@
+%row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 4em
+  padding: .15em .5em .15em 1em
+  box-sizing: border-box
+  background: $light-color
+  border-left: 1px solid $border-color
+  border-right: 1px solid $border-color
+  font-family: $secondary-font
+  color: $text-color
+  &:nth-of-type(odd)
+    background-color: #f4f4f4
+  &:first-of-type
+    padding: 0
+    background: $light-color
+    border: none
+    border-bottom: 2px solid $border-color
+    justify-content: center
+    text-transform: uppercase
+    font-weight: 500
+  &:last-of-type
+    padding: 0
+    border-bottom: 2px solid $border-color
+    justify-content: center
+    font-weight: 500
+  .checked
+    width: 1.2em
+    height: 1.2em
+    background: url('../img/icons/checked.png')
+    background-size: cover
+    border-radius: 50%
+    flex-shrink: 0
+    &--off
+      background: url('../img/icons/unchecked.png')
+      background-size: cover
+
+.decide
+  +container()
+  position: relative
+  flex-flow: column
+  &::before
+    content: ""
+    position: absolute
+    top: -35%
+    left: -33%
+    border-top: 555px solid transparent
+    border-left: 260px solid $primary-color
+    border-bottom: 1120px solid transparent
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    top: -36%
+    right: -33%
+    border-top: 500px solid transparent
+    border-right: 375px solid $main-color
+    border-bottom: 745px solid transparent
+    z-index: -1
+  &__head
+    display: flex
+    align-items: center
+    .head-block
+      @extend %head-block
+      padding-left: 1.5em
+      width: 21.3em
+      margin-right: 7.1em
+      &__title
+        @extend %head-title
+  &__video
+    width: 31em
+    height: 18em
+  &__goods
+    margin: 3.4em auto 1.5em
+    .goods
+      width: 100%
+      display: flex
+      box-sizing: border-box
+      &-item
+        width: 25%
+        box-sizing: border-box
+        &-benefits
+          text-transform: uppercase
+          font-weight: 500
+          &__row
+            @extend %row
+            padding-left: 1.5em
+            border-left: 2px solid $border-color
+            font-weight: 500
+            &:first-of-type, &:last-of-type
+              background: $primary-color
+              .goods-item-benefits__text
+                color: $light-color
+                font-size: 1.5em
+        &-china
+          &-text
+            &__row
+              @extend %row
+        &-aida
+          box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.1)
+          position: relative
+          top: -1.5em
+          width: 27%
+          &__row
+            @extend %row
+            &:first-of-type, &:last-of-type
+              background: $main-color
+              border: none
+              height: 5.5em
+              .goods-item-aida__text
+                color: $light-color
+                font-size: 1.5em
+              &:last-of-type
+                flex-flow: column
+                .goods-item-aida__text
+                  font-size: 2.5em
+                .goods-item-aida__subtext
+                  text-decoration: line-through
+
+
+
+              // height: 4.75em
+        &-bivan
+          &__row
+            border-right: 2px solid $border-color
+            @extend %row
+          &__text
+  &__sub-text
+    text-align: center
+    font-family: $secondary-font
+    font-size: 1.5em
+    font-weight: 500
+    text-transform: uppercase
+    color: $primary-color
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ?????????????????

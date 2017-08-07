@@ -1,0 +1,93 @@
+.how-to
+  +container()
+  flex-flow: column
+  margin: 8.1em auto 4.3em
+  position: relative
+  z-index: 2
+  &::after
+    content: ""
+    position: absolute
+    top: -125%
+    right: -33%
+    border-top: 685px solid transparent
+    border-right: 400px solid $main-color
+    border-bottom: 585px solid transparent
+    z-index: -1
+  &-head
+    display: flex
+    align-items: center
+    margin-bottom: 4.5em
+    &-title
+      @extend %head-block
+      width: 17.8em
+      margin-right: 5.1em
+      &__text
+        @extend %head-title
+        line-height: .9
+        span
+          @extend %head-text
+    &__video
+      width: 41em
+      height: 23.5em
+  &-instruction
+    display: flex
+    &__item
+      width: 25%
+      position: relative
+      overflow: hidden
+      >img
+        visibility: hidden
+        font-size: 0
+      &:first-of-type
+        background: url('../img/how-to/1.jpg')
+        background-size: cover
+      &:nth-of-type(2)
+        background: url('../img/how-to/2.jpg')
+        background-size: cover
+      &:nth-of-type(3)
+        background: url('../img/how-to/3.jpg')
+        background-size: cover
+      &:nth-of-type(4)
+        background: url('../img/how-to/4.jpg')
+        background-size: cover
+      &:hover
+        .how-to-instruction__shade
+          height: 100%
+          padding-top: 35%
+    &__shade
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 0
+      font-family: $secondary-font
+      font-size: 2em
+      color: $light-color
+      text-transform: uppercase
+      background: rgba(0, 0, 0, 0.8)
+      text-align: center
+      transition: .3s
+      box-sizing: border-box
+      padding-left: 5%
+      overflow: hidden
+      &::after
+        content: ""
+        position: absolute
+        width: 1.3em
+        height: 1.3em
+        bottom: 28%
+        left: 45%
+        z-index: 1
+        color: $light-color
+      &--1
+        &::after
+          background: url('../img/icons/1.png') center no-repeat
+      &--2
+        &::after
+          background: url('../img/icons/wind1.png') center no-repeat
+      &--3
+        &::after
+          background: url('../img/icons/wind2.png') center no-repeat
+      &--4
+        &::after
+          background: url('../img/icons/smile.png') center no-repeat

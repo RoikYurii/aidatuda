@@ -1,0 +1,50 @@
+.progress
+  +container()
+  flex-flow: column
+  padding: 0 11.3em 0 5.125em
+  border-bottom: 1px dashed #9d9d9d
+  box-sizing: border-box
+  margin: 7.1em auto 8.1em
+  >div
+    display: flex
+    justify-content: space-between
+    &:last-of-type
+      margin: 4.5em 0 1.8em 0
+      .progress-item
+        &:nth-of-type(2), &:nth-of-type(3)
+          justify-content: flex-end
+  &-head
+    @extend %head-block
+    display: flex
+    flex-flow: column
+    width: 16.3em
+    &__text
+      @extend %head-title
+      span
+        @extend %head-text
+  &-item
+    position: relative
+    display: flex
+    flex-flow: column
+    padding: 1.5em 0 0 1.6em
+    width: 16.3em
+    &__number
+      position: absolute
+      top: 0
+      left: 0
+      font-family: $secondary-font
+      font-size: 4.375em
+      font-weight: 500
+      text-transform: uppercase
+      color: $primary-color
+      line-height: 0.75
+      z-index: -1
+    &__text
+      font-family: $secondary-font
+      color: $text-color
+      text-transform: uppercase
+      font-weight: 500
+    &__subtext
+      font-family: $secondary-font
+      color: $text-color
+      margin-top: 1em

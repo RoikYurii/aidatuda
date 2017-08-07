@@ -1,0 +1,406 @@
+include _assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include progress/progress
+include head/head
+include header/header
+include ask/ask
+include start/start
+include tagline/tagline
+include china/china
+include decide/decide
+include take/take
+include order/order
+include how-to/how-to
+include footer/footer
+
+include regions/regions
+
+doctype html
+html(lang="en")
+
+	block head
+		head
+			+head({
+				"title": "Uranos",
+				"author": "Roik Yurii"
+			})
+			
+		+b.BODY.page
+			+b.DIV.wrapper
+				block header
+					+header()
+				
+				block ask
+					+ask()
+				
+				block start
+					+start()
+					
+				block tagline
+					+tagline()
+					
+				block china()
+					+china()
+					
+				block order
+					+order()
+				
+				block progress
+					+progress()
+				
+				block decide
+					+decide(
+						[
+							'Выгоды',
+							'Приемлимая стоимость',
+							'Пошив',
+							'Влагостойкая ткань',
+							'Клапан',
+							'Замок',
+							'Карабин',
+							'Воздушний рукав',
+							'Дополнительный воздушный рукав',
+							'Длинна в сдутом состоянии',
+							'Длинна в надутом состоянии',
+							'Гарантия',
+							'Постонная обратная связь и поддержка',
+							'Доставка',
+							'Итого',
+						],
+						
+						[
+							{
+								'text' : 'Китайские'
+							},
+							{
+								'text' : 'Да',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Обычные',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Нейлон 180den',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Нейлон 180D',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Стропа одежная 25 мм',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Одежный карабин пластмасовый',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Пришитый или сожнозаменяемый рукав из полиэтилена 30микрон',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'НЕТ',
+								'checked' : 'no'
+							},
+							{
+								'text' : '1,8-2м',
+								'checked' : 'no'
+							},
+							{
+								'text' : '1,6-1,8м',
+								'checked' : 'no'
+							},
+							{
+								'text' : '0-1 мес',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'НЕТ',
+								'checked' : 'no'
+							},
+							{
+								'text' : '3-5 дней',
+							},
+							{
+								'text' : '1000-1400 руб',
+							},
+						],
+						
+						[
+							{
+								'text' : 'АЙДАТУДА'
+							},
+							{
+								'text' : 'Да',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Усиленная, для пошива сумок и обуви',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Oxford 260Den PU1000 (кстати, это значит, что она выдерживает 1000мм столбца воды на 1 кв.см.)',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Oxford 300Den PU1000',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Стропа тросовая усиленная 50 мм',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Усиленный горный карабин из Полиацеталя 50мм ',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Усиленная пленка, изготовленная по спецзаказу у Российского производителя.  50 микрон.',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Сьемный рукав из ПНВД 50-60микр',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '2,6м',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '1,9-2м',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '12 мес',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'ЕСТЬ',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '0-1 день*',
+								'checked' : ''
+							},
+							{
+								'subtext': '2 500 руб',
+								'text' : '1750 руб',
+							},
+						],
+						
+						[
+							{
+								'text' : 'БИВАН, ЛАМЗАК'
+							},
+							{
+								'text' : 'НЕТ',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Стандартная нитка',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Окфорд 240D (тоже на РИП Стоп)',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Окфорд 240D',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Стропа стандартная 40 мм',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'Пластиковый карабин 40мм',
+								'checked' : 'no'
+							},
+							{
+								'text' : 'Съемный полиэтиеновый рукав 50мкр',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'НЕТ',
+								'checked' : 'no'
+							},
+							{
+								'text' : '2-2,5м',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '1,7-1,9м',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '6-12 мес',
+								'checked' : 'yes'
+							},
+							{
+								'text' : 'ЕСТЬ',
+								'checked' : 'yes'
+							},
+							{
+								'text' : '4-6 дней',
+								'checked' : ''
+							},
+							{
+								'text' : '2500-3500 руб',
+								'checked' : ''
+							},
+						]
+					)
+				
+				
+				block take
+					+take([
+						{
+							class: 'call',
+							text: 'звонок'
+						},
+						{
+							class: 'write',
+							text: 'заявка'
+						},
+						{
+							class: 'come',
+							text: 'посетить пункт пвт в своем городе или заказать доставку'
+						},
+						{
+							class: 'take',
+							text: 'получить товар и оплатить'
+						},
+					])
+				
+				block regions
+					+regions([
+						{
+              id: 'region1',
+							name: 'Регион 1',
+							cities: ['Москва', '','','','',''],
+							contacts: 
+							[
+								{
+									city: 'Москва',
+									type: 'Отдел продаж и склад',
+									adress: 'г. Москва,ул. Южнопартовая 7,строение 9. ст м. Кожуховская',
+									wwtime: 'Пн-Пт с 9:00 до 21:00',
+									wetime: 'Сб, Вс с 10:00 до 18:00',
+									number: '+7 (495) 055-47-12'
+								}, 
+								{
+									city: 'Москва',
+									type: 'Москва Пункт выдачи (склад СДЕК)',
+									adress: 'г. Москва, 1-ый Магистральный проезд, д.12, стр. 1',
+									wwtime: 'Пн-Пт с 9:00 до 21:00',
+									wetime: 'Сб, Вс с 10:00 до 18:00',
+									number: '+7 (495) 055-47-12'
+								}, 
+							]
+						},
+						{
+              id: 'region2',
+							name: 'Регион 2',
+							cities: ['Санкт-Петербург', '','','','',''],
+							contacts: 
+							[
+								{
+									city: '',
+									type: '',
+									adress: '',
+									wwtime: '',
+									wetime: '',
+									number: ''
+								}, 
+							]
+						},
+						{
+              id: 'region3',
+							name: 'Регион 3',
+							cities: ['Смоленск', 'Калуга','Тула','','',''],
+							contacts: 
+							[
+								{
+									city: '',
+									type: '',
+									adress: '',
+									wwtime: '',
+									wetime: '',
+									number: ''
+								}, 
+							]
+						},
+						{
+              id: 'region4',
+							name: 'Регион 4',
+							cities: ['Нижний Новгород', 'Самара','Саратов','Волгоград','Казань',''],
+							contacts: 
+							[
+								{
+									city: '',
+									type: '',
+									adress: '',
+									wwtime: '',
+									wetime: '',
+									number: ''
+								}, 
+							]
+						},
+						{
+              id: 'region5',
+							name: 'Регион 5',
+							cities: ['Брянск', 'Орел','Липецк','Курск','Воронеж','Белгород'],
+							contacts: 
+							[
+								{
+									city: '',
+									type: '',
+									adress: '',
+									wwtime: '',
+									wetime: '',
+									number: ''
+								}, 
+							]
+						},
+						{
+              id: 'region6',
+							name: 'Регион 6',
+							cities: ['Ростов', 'Краснодар','Севастополь','Сочи','',''],
+							contacts: 
+							[
+								{
+									city: '',
+									type: '',
+									adress: '',
+									wwtime: '',
+									wetime: '',
+									number: ''
+								}, 
+							]
+						},
+					])
+				
+				block how-to
+					+how-to()
+				
+				block footer
+					+footer()
+				
+				block vendors
+					// build:js js/vendor.js
+					script( src="js/jquery.min.js")
+					// endbuild
+				
+				block scripts
+					// build:js js/main.js
+					script( src="js/main.js")
+					// endbuild
+
+	
+	
+	
+	
+	

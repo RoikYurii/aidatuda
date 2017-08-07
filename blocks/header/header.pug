@@ -1,0 +1,52 @@
+mixin header()
+  +b.HEADER.header 
+    +e.DIV.accent-side
+    +e.DIV.container
+      +e.DIV.logo
+        +b.A.logo(href='#')
+          +e.IMG(src='img/logo.png')
+      +e.DIV.nav
+        +b.NAV.main-nav
+          +e.DIV.item
+            +e.A.link(href='') Выгоды
+            +e.A.link(href='') Главная
+          +e.DIV.item
+            +e.A.link(href='') Прайс
+            +e.A.link(href='') Аэродиван
+          +e.DIV.item
+            +e.A.link(href='') Адрес
+            +e.A.link(href='') Качество
+          +e.DIV.item
+            +e.A.link(href='') Инструкция по первому запуску
+            +e.A.link(href='') Цена
+      +e.DIV.contacts
+        +b.DIV.contacts
+          +b.DIV.contacts-phones
+            +e.DIV.text
+              +e.P Отдел продаж:
+              +e.P Многоканальный:
+            +e.DIV.numbers
+              +e.P 8920-732-47-12
+              +e.P 8920-714-47-12
+              +e.P +7(495) 055-4712
+            +e.I.open.fa.fa-sort-desc.fa-lg(aria-hidden="true")
+            //- +e.DIV.ask Задать вопрос
+            //- +e.socials
+            //-   +b.socials
+            //-     +e.DIV.item
+            //-     +e.DIV.item
+            //-     +e.DIV.item
+            //-     +e.DIV.item
+          +b.DIV.contacts-actions
+            +e.P.ask Задать вопрос
+            +e.DIV.socials
+              +b.DIV.socials
+                +e.A.ig(href="")
+                  i.fa.fa-instagram(aria-hidden="true")
+                +e.A.vk(href="")
+                  i.fa.fa-vk(aria-hidden="true")
+                +e.A.fb(href="")
+                  i.fa.fa-facebook(aria-hidden="true")
+                +e.A.ok(href="")
+                  i.fa.fa-odnoklassniki(aria-hidden="true")
+                

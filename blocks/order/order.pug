@@ -1,0 +1,50 @@
+mixin order()
+  +b.SECTION.order
+    +b.DIV.order-head
+      +e.P.title Цена<br><span>качество</span>
+    +b.DIV.order-content
+      +e.H3.title Аэродиван Айдатуда 01
+      +e.DIV.container
+        +e.DIV.left-block
+          +b.DIV.color-chose
+            +e.IMG.img(src="img/order/blue.png" id='blue')
+            +e.IMG.img(src="img/order/green.png" id='green')
+            +e.IMG.img(src="img/order/red.png" id='red')
+            +e.IMG.img(src="img/order/yellow.png" id='yellow')
+            +e.IMG.img(src="img/order/violet.png" id='violet')
+            +b.DIV.color-chose-picker
+              +e.DIV.item--active.color-chose-picker__item-blue(value='blue')
+              +e.DIV.item.color-chose-picker__item-green(value='green')
+              +e.DIV.item.color-chose-picker__item-red(value='red')
+              +e.DIV.item.color-chose-picker__item-yellow(value='yellow')
+              +e.DIV.item.color-chose-picker__item-violet(value='violet')
+          +b.DIV.more-info
+            +e.DIV.icon
+            +e.P.text Остались вопросы-<br>позвоните консультанту<br><span>8920-714-47-12</span>
+        +e.DIV.right-block
+          +b.DIV.charact
+            +e.DIV.item
+              +e.SPAN Вес (с сумкой):
+              +e.SPAN 1.4кг
+            +e.DIV.item
+              +e.SPAN В сложенном виде:
+              +e.SPAN 18 х 35 см
+            +e.DIV.item
+              +e.SPAN В разложеным виде:
+              +e.SPAN 240 х 70 см
+            +e.DIV.item
+              +e.SPAN Макс выдерживаемый вес:
+              +e.SPAN 250кг
+          +b.DIV.prices
+            +e.DIV.old-price
+              +e.SPAN Цена
+              +e.SPAN 2500 руб
+            +e.DIV.now-price
+              +e.SPAN Акция 
+              +e.SPAN 1750 руб
+            +e.DIV.opt-price
+              +e.SPAN Цена от 3х штук
+              +e.SPAN 1300руб
+          +e.BUTTON.btn Заказать
+          
+        

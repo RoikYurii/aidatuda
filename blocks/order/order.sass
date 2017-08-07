@@ -1,0 +1,206 @@
+%chosen
+  width: 20px
+  height: 20px
+  box-sizing: border-box
+  &::after
+    content: ""
+
+.order
+  +container()
+  position: relative
+  flex-flow: column
+  align-items: flex-end
+  &::before
+    content: ""
+    position: absolute
+    top: -35%
+    left: -32.5%
+    border-top: 430px solid transparent
+    border-left: 1175px solid $main-color
+    border-bottom: 670px solid transparent
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    top: -32%
+    right: -35%
+    border-top: 615px solid transparent
+    border-right: 1100px solid $primary-color
+    border-bottom: 425px solid transparent
+    z-index: -1
+  &-head
+    @extend %head-block
+    padding-left: 1.25em
+    margin: 0 12.75em 3.1em 0
+    &__title
+      @extend %head-title
+      span
+        @extend %head-text
+  &-content
+    display: flex
+    width: 100%
+    flex-flow: column
+    padding: 1.75em 0 2em 0
+    border: solid 3px #eaeaea
+    box-sizing: border-box
+    background: $light-color
+    &__container
+      display: flex
+      width: 100%
+    &__title
+      font-family: $secondary-font
+      font-size: 1.5em
+      font-weight: 500
+      text-align: center
+      color: $text-color
+      text-transform: uppercase
+    &__left-block
+      display: flex
+      flex-flow: column
+      width: 50%
+      .color-chose
+        display: flex
+        justify-content: flex-end
+        &__img
+          width: 24.25em
+          display: none
+          &:first-of-type
+            display: block
+        &-picker
+          display: flex
+          flex-flow: column
+          align-self: flex-end
+          margin: 0 0 2em 2.375em
+          &__item
+            position: relative
+            width: 18px
+            height: 18px
+            border-radius: 50%
+            margin-top: 0.7em
+            cursor: pointer
+            &--active
+              @extend %chosen
+            &::after
+              position: absolute
+              top: 50%
+              margin-top: -13px
+              left: 50%
+              margin-left: -13px
+              width: 26px
+              height: 26px
+              border-radius: 50%
+              border-width: 1px
+              border-style: solid
+              box-sizing: border-box
+            &-blue
+              background: $primary-color
+              &::after
+                border-color: $primary-color
+            &-green
+              background: #b1bf41
+              &::after
+                border-color: #b1bf41
+            &-red
+              background: #da7e8b
+              &::after
+                border-color: #da7e8b
+            &-yellow
+              background: $main-color
+              &::after
+                border-color: $main-color
+            &-violet
+              background: #653cda
+              &::after
+                border-color: #653cda
+      .more-info
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 1em
+        &__icon
+          width: 2.6em
+          height: 2.6em
+          margin-right: 1em
+          border-radius: 50%
+          background: $primary-color url('../img/icons/phone.png') no-repeat center
+          background-size: 60% 60%
+        &__text
+          font-size: 1em
+          font-family: $secondary-font
+          text-align: center
+          color: #505050
+          >span
+            text-transform: uppercase
+            font-size: 1.6em
+            font-weight: 500
+            line-height: 1.5
+    &__right-block
+      display: flex
+      flex-flow: column
+      align-items: center
+      justify-content: space-between
+      padding-top: 3.3em
+      width: 50%
+      .charact
+        width: 21em
+        display: flex
+        flex-flow: column
+        &__item
+          display: flex
+          justify-content: space-between
+          span
+            line-height: 1.2
+            font-family: $secondary-font
+            &:first-of-type
+              color: #929292
+            &:last-of-type
+              color: #505050
+              font-weight: 500
+      .prices
+        display: flex
+        flex-flow: column
+        width: 18em
+        div
+          display: flex
+          justify-content: space-between
+          align-items: center
+          span
+            font-family: $secondary-font
+        &__old-price
+          span
+            color: #929292
+            &:first-of-type
+            &:last-of-type
+              font-size: 1.5em
+              text-decoration: line-through
+        &__now-price
+          margin: 0.5em 0 0.875em 0
+          span
+            color: $accent-color
+            &:first-of-type
+              font-size: 1.5em
+            &:last-of-type
+              font-size: 2.5em
+              font-weight: 500
+        &__opt-price
+          span
+            color: #505050
+            &:first-of-type
+            &:last-of-type
+              font-size: 1.5em
+    &__btn
+      position: relative
+      width: 10em
+      height: 2.3em
+      background: $accent-color
+      font-size: 1.5em
+      font-family: $secondary-font
+      font-weight: 500
+      cursor: pointer
+      border: none
+      color: $light-color
+      line-height: .9
+      padding: 0
+      box-sizing: border-box
+      &:hover
+        background: $primary-color

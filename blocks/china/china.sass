@@ -1,0 +1,30 @@
+.china
+  +container()
+  position: relative
+  justify-content: space-between
+  align-items: center
+  margin: 6.5em auto 8.1em
+  &-head
+    width: 26.5em
+    @extend %head-block
+    padding-left: 2em
+    &::before
+      width: 1.2em
+      background: url("../img/icons/!.png")
+      background-size: 100%  100%
+    &__title
+      @extend %head-title
+      span
+        @extend %head-text
+        font-weight: 200
+  &__text
+    width: 43.6em
+    font-family: $secondary-font
+    color: $text-color
+    line-height: 1.2
+    span
+      font-weight: 500
+      &:first-of-type
+        font-size: 19px
+      &:last-of-type
+        color: $accent-color

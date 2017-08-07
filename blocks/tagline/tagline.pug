@@ -1,0 +1,28 @@
+mixin tagline()
+  +b.SECTION.tagline
+    +e.P.title <span>комфорт, удобство, простота</span> <br>легкость везде и всегда
+    +e.IMG.airdivan(src="img/airdivan.png")
+    +e.IMG.bag(src="img/bag.png")
+    +b.DIV.tagline-about
+      +b.DIV.about-head
+        +e.P.title Что такое аэродиван <br><span>и куда его взять</span>
+      +e.DIV.slider
+        +b.DIV#slider
+          +b.DIV.slides
+            +e.DIV.img
+              +e.IMG(src="img/slider/beach.jpg")
+              +e.DIV.shade <span>На пляж</span>Комфортный отдых в компании друзей обеспечит ламзак
+            +e.DIV.img
+              +e.IMG(src="img/slider/park.jpg")
+              +e.DIV.shade <span>В парк</span>Комфортный отдых в компании друзей обеспечит ламзак
+            +e.DIV.img
+              +e.IMG(src="img/slider/trip.jpg")
+              +e.DIV.shade <span>В поход</span>Комфортный отдых в компании друзей обеспечит ламзак
+            +e.DIV.img
+              +e.IMG(src="img/slider/home.jpg")
+              +e.DIV.shade <span>Домой и на дачу</span>Комфортный отдых в компании друзей обеспечит ламзак
+          +b.DIV.slider-nav
+            +e.DIV#prevSlide
+            +e.DIV.line
+              +e.DIV.active
+            +e.DIV#nextSlide

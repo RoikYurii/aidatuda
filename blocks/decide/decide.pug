@@ -1,0 +1,43 @@
+mixin decide(benefits, china, aida, bivan)
+  +b.SECTION.decide
+    +e.DIV.head
+      +b.DIV.head-block
+        +e.H3.title Решать вам
+      +e.IFRAME.video(src="https://www.youtube.com/embed/daqe3gaUuYw" frameborder="0" allowfullscreen)
+    +e.DIV.goods
+      +b.DIV.goods
+        +b.DIV.goods-item-benefits.goods-item
+          each benefit in benefits
+            +e.DIV.row
+              +e.P.text=benefit
+        +b.DIV.goods-item-china.goods-item
+          +b.DIV.goods-item-china-text
+            each item in china
+              +e.DIV.row
+                +e.P.text=item.text
+                if item.checked
+                  if item.checked === 'yes'
+                    +b.DIV.checked
+                  else if item.checked === 'no'
+                    +b.DIV.checked--off
+        +b.DIV.goods-item-aida.goods-item
+          each item in aida
+            +e.DIV.row
+              if item.subtext
+                +e.P.subtext=item.subtext
+              +e.P.text=item.text
+              if item.checked
+                if item.checked === 'yes'
+                  +b.DIV.checked
+                else if item.checked === 'no'
+                  +b.DIV.checked--off
+        +b.DIV.goods-item-bivan.goods-item
+          each item in bivan
+            +e.DIV.row
+              +e.P.text=item.text
+              if item.checked
+                if item.checked === 'yes'
+                  +b.DIV.checked
+                else if item.checked === 'no'
+                  +b.DIV.checked--off
+    +e.P.sub-text Получи свой аэродиван через 10 минут после заявки
