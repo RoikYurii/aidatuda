@@ -368,7 +368,7 @@ a {
         .header__contacts .contacts-phones__open {
           font-size: 1em;
           position: relative;
-          top: -.4em;
+          top: -.3em;
           color: #f6625e;
           cursor: pointer; }
           .header__contacts .contacts-phones__open--active {
@@ -452,7 +452,20 @@ a {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotateZ(90deg);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .ask__close:hover {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: rotateZ(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotateZ(0deg); }
     .ask__close div {
       height: 125%;
       width: 4px;
@@ -504,7 +517,11 @@ a {
               box-sizing: border-box;
       border: 1px solid #d5d5d5; }
       .ask-form input:focus {
-        outline: none; }
+        outline: none;
+        color: #4f4f4f;
+        font-family: "Roboto", Helvetica, sans-serif;
+        -webkit-box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.3);
+                box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.3); }
     .ask-form__btn {
       width: 10.8em;
       height: 2.4em;
@@ -517,15 +534,16 @@ a {
       border: none;
       outline: none;
       position: relative;
-      padding-right: 2em; }
+      padding-right: 2.2em;
+      margin: .6em; }
       .ask-form__btn::after {
         content: "";
         position: absolute;
-        width: 1.4em;
-        height: 1em;
+        width: 12%;
+        height: 40%;
         background: url("../img/icons/mail.png") no-repeat;
         top: .7em;
-        right: 1.5em; }
+        right: 1.4em; }
 
 .start__bg-girl, .start__bg-man, .start__bg-white {
   position: absolute;
@@ -567,7 +585,7 @@ a {
     z-index: 2; }
   .start__bg-white {
     bottom: -10%;
-    left: 22%;
+    left: 10%;
     width: 80%;
     height: 25%;
     z-index: 3; }
@@ -1719,7 +1737,8 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 54em;
-    margin: 4.5em 0 0 11em; }
+    margin: 4.5em 0 0 11em;
+    z-index: 20; }
     .take-container::before {
       content: "";
       position: absolute;

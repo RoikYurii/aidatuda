@@ -5,12 +5,15 @@
   //menuSliding
   function menuSlide() {
     var $navLink = $('.main-nav__link');
+    var $headerHeight;
     var $top, $section;
     $navLink.click(function (e) {
       e.preventDefault;
+      $headerHeight = +$('.header').css('height').slice(0, -2) + 20;
+      console.log($headerHeight);
       $section = $(this).attr('href');
       console.log($section);
-      $top = $($section).offset().top;
+      $top = $($section).offset().top - $headerHeight;
       $('body, html').animate({
         scrollTop : $top
       }, 500)

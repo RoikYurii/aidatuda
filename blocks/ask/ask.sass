@@ -25,6 +25,11 @@
     display: flex
     justify-content: space-between
     cursor: pointer
+    transform: rotateZ(90deg)
+    transition: all .3s
+    &:hover
+      transition: .3s
+      transform: rotateZ(0deg)
     div
       height: 125%
       width: 4px
@@ -63,6 +68,9 @@
       border: 1px solid $form-color
       &:focus
         outline: none
+        color: $text-color
+        font-family: $secondary-font
+        box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.3)
     &__btn
       width: 10.8em
       height: 2.4em
@@ -75,12 +83,15 @@
       border: none
       outline: none
       position: relative
-      padding-right: 2em
+      padding-right: 2.2em
+      margin: .6em
+      // &:hover::after
+      //   transition: .2s
       &::after
         content: ""
         position: absolute
-        width: 1.4em
-        height: 1em
+        width: 12%
+        height: 40%
         background: url('../img/icons/mail.png') no-repeat
         top: .7em
-        right: 1.5em
+        right: 1.4em
