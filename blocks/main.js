@@ -24,10 +24,11 @@
   //popup(.ask)
   function showPopup() {
     $('.contacts-actions__ask').click(function (e) {
-      $('.ask').addClass('ask--active');
+      $('.ask').fadeIn('fast');
+      // $('.ask').addClass('ask--active');
     });
     $('.ask__close').click(function () {
-      $('.ask').removeClass('ask--active');
+      $('.ask').fadeOut('fast');
     });
   };
   showPopup();

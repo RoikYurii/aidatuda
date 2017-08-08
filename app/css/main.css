@@ -422,20 +422,11 @@ a {
   max-width: 1920px;
   background: rgba(0, 0, 0, 0.6);
   z-index: 100;
-  display: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .ask--active {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+  display: none; }
   .ask__block {
     width: 42em;
     height: 29em;
-    margin-top: 7.2em;
+    margin: 7.2em auto;
     background: #ffffff;
     position: relative; }
   .ask__close {
