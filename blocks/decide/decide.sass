@@ -40,6 +40,7 @@
   +container()
   position: relative
   flex-flow: column
+  z-index: 1
   &::before
     content: ""
     position: absolute
@@ -98,10 +99,11 @@
             &__row
               @extend %row
         &-aida
-          box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.1)
+          // box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.1)
           position: relative
           top: -1.5em
           width: 27%
+          animation: shadow-moving 1.5s alternate infinite
           &__row
             @extend %row
             &:first-of-type, &:last-of-type
@@ -135,7 +137,11 @@
     color: $primary-color
 
 
-
+@keyframes shadow-moving
+  0%
+    box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.3)
+  100%
+    box-shadow: -2.5px 1.6px 27.6px 1.5px rgba(22, 20, 25, 0.1)
 
 
 

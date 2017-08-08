@@ -7,6 +7,7 @@ include header/header
 include ask/ask
 include start/start
 include tagline/tagline
+include features/features
 include china/china
 include decide/decide
 include take/take
@@ -39,6 +40,44 @@ html(lang="en")
 					
 				block tagline
 					+tagline()
+					
+				block features
+					+features([
+						{
+							title: 'Оригинальныя ткань',
+							text: 'Влагоотталкивающая ткань Lux Oxford PU1000 с пропиткой плотностью 260den'
+						},
+						{
+							title: 'Сумка',
+							text: 'Удобная транспортировочная сумка'
+						},
+						{
+							title: 'Длина в сдутом виде',
+							text: 'Длина в сдутом состоянии 2400 мм, в надутом состоянии - 2000-1900мм'
+						},
+						{
+							title: '2 боковых кармана',
+						},
+						{
+							title: 'Съемный рукав',
+							text: 'Съемный внутренний ПНВД рукав 50 мк'
+						},
+						{
+							title: 'Оригинальное нанесение'
+						},
+						{
+							title: 'Усиленный замок',
+							text: 'Замок из усиленной стропы и ацеталевого карабина 50мм с нагрузкой более 300 кг'
+						},
+						{
+							title: 'Усиленная вкладка',
+							text: 'Внутренняя вкладка воздушного клапана 50мм из усиленного пластика 2 мм'
+						},
+						{
+							title: 'Уникальный клапан',
+							text: 'Уникальный воздушный клапан из усиленной ПВХ ткани класса Lux с пропиткой плотностью 800 гр/м'
+						},
+					])
 					
 				block china()
 					+china()

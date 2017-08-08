@@ -19,8 +19,9 @@
   line-height: 1.5em
   vertical-align: middle
   box-sizing: border-box
+  transition: .3s
+  border-radius: 50%
   &:hover
-    border-radius: 50%
     border: 2px solid $main-color
     background-color: $main-color
 
@@ -43,8 +44,11 @@
     top: 0
     background: $primary-color
     z-index: -1
+    @media (min-width: 1400px)
+      left: 63%
     &--active
       background-color: $main-color
+      transition: .2s
     &::before
       content: ""
       position: absolute
@@ -72,6 +76,9 @@
   &__logo
     align-self: center
     width: 9%
+    &:hover
+      transition: .3s
+      transform: scale(1.1)
   &__nav
     height: 100%
     width: 55%
@@ -140,7 +147,7 @@
         position: absolute
         top: 0
         left: 0
-        height: 1.9em
+        height: 1.8em
         width: 100%
         display: flex
         justify-content: space-between
@@ -149,8 +156,10 @@
         overflow: hidden
         &--active
           height: 100%
+          transition: all .2s
         &__text
           @extend %phones-section
+          line-height: 1.05
           &--active
             color: $light-color
         &__numbers
@@ -158,10 +167,11 @@
         &__open
           font-size: 1em
           position: relative
-          top: -100%
+          top: -.4em
           color: #f6625e
           cursor: pointer
           &--active
+            transition: .3s
             color: $light-color
       &-actions
         padding: 1.2em 0 0.5em 0
@@ -169,13 +179,15 @@
         justify-content: space-between
         box-sizing: border-box
         width: 100%
-        align-items: baseline
         &--hidden
           display: none
         &__ask
+          line-height: 1.5
           text-decoration: underline
           color: $light-color
           cursor: pointer
+          &:hover
+            transition: .2s
         &__socials
           width: 50%
 .socials

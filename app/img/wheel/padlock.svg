@@ -1,3 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="51" viewBox="0 0 55 51">
-  <image id="padlock" width="55" height="51" xlink:href="data:img/png;base64,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"/>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490.225 490.225" style="enable-background:new 0 0 490.225 490.225;" xml:space="preserve">
+<g>
+	<g>
+		<path style="fill:#2C2F33;" d="M265.625,20.512c-61.1,0-118.2,24.1-160.8,67.8c-3.8,3.9-3.7,10.2,0.2,14c3.9,3.8,10.2,3.7,14-0.2
+			c38.9-39.9,90.9-61.8,146.6-61.8c112.9,0,204.8,91.9,204.8,204.8s-91.9,204.8-204.8,204.8s-204.8-91.9-204.8-204.8v-8.1l24.1,24.1
+			c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9c3.9-3.9,3.9-10.1,0-14l-41-41c-3.9-3.9-10.1-3.9-14,0l-41,41c-3.9,3.9-3.9,10.1,0,14
+			c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9l24.1-24.1v8.1c0,123.8,100.7,224.6,224.6,224.6s224.6-100.8,224.6-224.6
+			S389.425,20.512,265.625,20.512z"/>
+		<path style="fill:#3C92CA;" d="M265.625,121.412c-36.3,0-65.8,29.5-65.8,65.8v34h-22.5c-5.5,0-9.9,4.4-9.9,9.9v113.9
+			c0,5.5,4.4,9.9,9.9,9.9h176.5c5.5,0,9.9-4.4,9.9-9.9v-114c0-5.5-4.4-9.9-9.9-9.9h-22.5v-34
+			C331.425,150.912,301.925,121.412,265.625,121.412z M219.625,187.212c0-25.4,20.6-46,46-46s46,20.6,46,46v34h-91.9v-34H219.625z
+			 M344.025,240.912v94.1h-156.8v-94.1H344.025L344.025,240.912z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>

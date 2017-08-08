@@ -1,0 +1,159 @@
+%wheel-nav
+  position: absolute
+  left: 4%
+  width: 2.5em
+  height: 1.5em
+  cursor: pointer
+  z-index: 10
+  &:hover
+    transition: all.3s
+    transform: scale(1.3)
+
+.features
+  +container()
+  position: relative
+  flex-flow: nowrap
+  padding-left: 3.2em
+  z-index: 2
+  &::before
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    top: -15%
+    left: -32%
+    border-top: 605px solid transparent
+    border-left: 300px solid $primary-color
+    border-bottom: 605px solid transparent
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    top: -23%
+    right: -32%
+    border-top: 520px solid transparent
+    border-right: 730px solid $main-color
+    border-bottom: 895px solid transparent
+    z-index: -1
+  &__head
+    order: 2
+    position: relative
+    left: -3em
+    &::after
+      content: ""
+      top: 37%
+      left: -30%
+      position: absolute
+      width: 29em
+      height: 14.5em
+      background: url('../img/product.png') no-repeat
+      background-size: cover
+      z-index: 20
+  &-head
+    @extend %head-block
+    &__title
+      @extend %head-title
+      span
+        @extend %head-text
+.wheel
+  position: relative
+  background: url('../img/wheel/wheel.png')
+  background-size: cover
+  width: 45.5em
+  height: 45.5em
+  &-roll
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    transition: all .5s
+    &__icon
+      width: 60%
+      transition: all .5s
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 12%
+      height: 12%
+      position: absolute
+      background: $light-color
+      font-size: 30px
+      font-weight: 500
+      color: blue
+      border-radius: 50%
+      transition: transform .5s
+      cursor: pointer
+      &--active, &:hover
+        background: $main-color
+        transform: scale(1.3)
+      &--0
+        left: 0.5%
+        top: 50%
+        margin-top: -6%
+      &--1
+        left: 9%
+        top: 18%
+      &--2
+        left: 30%
+        top: 3%
+      &--3
+        right: 30%
+        top: 3%
+      &--4
+        right: 9%
+        top: 18%
+      &--5
+        right: 9%
+        bottom: 18%
+      &--6
+        right: 30%
+        bottom: 3%
+      &--7
+        left: 30%
+        bottom: 3%
+      &--8
+        left: 9%
+        bottom: 18%
+  &-text
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    z-index: -1
+    transition: all .5s
+    opacity: 0
+    &:nth-child(4)
+      opacity: 1
+    &__title
+      width: 14.7em
+      font-size: 1.5em
+      font-weight: 500
+      font-family: $secondary-font
+      color: $primary-color
+      text-transform: uppercase
+    &__text
+      margin-top: .8em
+      width: 14.7em
+      font-size: 1.5em
+      font-family: $secondary-font
+      line-height: 1.2
+      color: $text-color
+#wheelRollPrev
+  @extend %wheel-nav
+  top: 60.5%
+  left: 4.2%
+  background: url('../img/icons/arrow.png') no-repeat
+  background-size: 100%
+#wheelRollNext
+  @extend %wheel-nav
+  top: 37%
+  background: url('../img/icons/arrow2.png') no-repeat
+  background-size: 100%
