@@ -9,23 +9,32 @@ mixin features(features)
           +e.DIV#wheelRollPrev
           +b.DIV.wheel-roll
             +e.DIV.item--0(class='wheel-roll__item--active' value='0')
-              +e.IMG.icon(src='img/wheel/tissue.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/tissue.svg')
             +e.DIV.item--1(value='1')
-              +e.IMG.icon(src='img/wheel/shopping-bag.svg')  
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/shopping-bag.svg')  
             +e.DIV.item--2(value='2')
-              +e.IMG.icon(src='img/wheel/tool.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/tool.svg')
             +e.DIV.item--3(value='3')
-              +e.IMG.icon(src='img/wheel/pocket.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/pocket.svg')
             +e.DIV.item--4(value='4')
-              +e.IMG.icon(src='img/wheel/tissue.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/towels.svg')
             +e.DIV.item--5(value='5')
-              +e.IMG.icon(src='img/wheel/image.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/image.svg')
             +e.DIV.item--6(value='6')
-              +e.IMG.icon(src='img/wheel/load.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/weight.svg')
             +e.DIV.item--7(value='7')
-              +e.IMG.icon(src='img/wheel/padlock.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/padlock.svg')
             +e.DIV.item--8(value='8')
-              +e.IMG.icon(src='img/wheel/wind.svg')
+              +e.DIV
+                +e.IMG.icon(class="svg" src='img/wheel/wind.svg')
           -var i=0
           each feature in features
             +b.DIV.wheel-text(id="wheel-text-"+i++)

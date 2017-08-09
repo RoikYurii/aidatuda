@@ -2,23 +2,32 @@
 
 ;(function($){
 
-  //menuSliding
+
+  // menuSliding
   function menuSlide() {
     var $navLink = $('.main-nav__link');
+    var $logo = $('.logo')
     var $headerHeight;
-    var $top, $section;
-    $navLink.click(function (e) {
-      e.preventDefault;
+    var $top, $section, $current;
+
+    function scroll(current) {
+      event.preventDefault()
       $headerHeight = +$('.header').css('height').slice(0, -2) + 20;
-      console.log($headerHeight);
-      $section = $(this).attr('href');
-      console.log($section);
+      $section = current.attr('href');
       $top = $($section).offset().top - $headerHeight;
       $('body, html').animate({
         scrollTop : $top
       }, 500)
-    })
-  };
+    }
+
+    $navLink.click(function (event) {
+      scroll($(this));
+    });
+    $logo.click(function (event) {
+      scroll($(this));
+    });
+
+  }
   menuSlide();
 
   //popup(.ask)
@@ -113,7 +122,7 @@
     var $wheelRoll = $('.wheel-roll');
     var $wheelRollItems = $('.wheel-roll__item');
     var $wheelRollItemActive;
-    var $wheelRollIcons = $('.wheel-roll__icon');
+    var $wheelRollIcons = $('.wheel-roll__icon').parent();
     var $wheelTexts = $('.wheel-text')
     var rotateWheel;
     var rotateIcon;
@@ -243,6 +252,14 @@
     });
   }
   showRegions()
+
+  // showFooterContacts
+  function showFooterContacts() {
+    $('.footer-contacts-phones').hover(function () {
+      $('.footer').toggleClass('footer--active')
+    });
+  };
+  showFooterContacts();
 
 }(jQuery));
 

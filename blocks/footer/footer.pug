@@ -2,14 +2,16 @@ mixin footer()
   +b.FOOTER.footer
     +e.DIV.container
       +e.DIV.contacts-phones
-        +b.DIV.contacts-phones
+        +b.DIV.footer-contacts-phones
           +e.DIV.text
             +e.P Отдел продаж:
-            //- +e.P Многоканальный:
+            +e.P Многоканальный:
+
           +e.DIV.numbers
             +e.P 8920-732-47-12
-            //- +e.P 8920-714-47-12
-            //- +e.P +7(495) 055-4712
+            +e.P 8920-714-47-12
+            +e.P +7(495) 055-4712
+    
           +e.I.open.fa.fa-sort-desc.fa-lg(aria-hidden="true")
       +e.DIV.logo
         +b.A.logo(href='#')

@@ -35,6 +35,18 @@
       width: 25%
       position: relative
       overflow: hidden
+      &::after
+        content: "01"
+        top: 0
+        transform: translateX(-50%)
+        left: 50%
+        font-size: 6em
+        font-family: $secondary-font
+        font-weight: 700
+        color: $primary-color
+        position: absolute
+        background: url('../img/how-to/01.png')
+        z-index: 50
       >img
         visibility: hidden
         font-size: 0
@@ -44,12 +56,18 @@
       &:nth-of-type(2)
         background: url('../img/how-to/2.jpg')
         background-size: cover
+        &::after
+          content: "02"
       &:nth-of-type(3)
         background: url('../img/how-to/3.jpg')
         background-size: cover
+        &::after
+          content: "03"
       &:nth-of-type(4)
         background: url('../img/how-to/4.jpg')
         background-size: cover
+        &::after
+          content: "04"
       &:hover
         .how-to-instruction__shade
           height: 100%

@@ -19,13 +19,13 @@
         <div class="header__accent-side">
         </div>
         <div class="header__container">
-          <div class="header__logo"><a class="logo" href="#"><img src="img/logo.png" alt="" role="presentation"/></a>
+          <div class="header__logo"><a class="logo" href="#start"><img src="img/logo.png" alt="" role="presentation"/></a>
           </div>
           <div class="header__nav">
             <nav class="main-nav">
               <div class="main-nav__item"><a class="main-nav__link" href="#decide">Выгоды</a><a class="main-nav__link" href="#start">Главная</a>
               </div>
-              <div class="main-nav__item"><a class="main-nav__link" href="#decide">Прайс</a><a class="main-nav__link" href="#tagline">Аэродиван</a>
+              <div class="main-nav__item"><a class="main-nav__link" href="#order">Прайс</a><a class="main-nav__link" href="#tagline">Аэродиван</a>
               </div>
               <div class="main-nav__item"><a class="main-nav__link" href="#regions">Адрес</a><a class="main-nav__link" href="#features">Качество</a>
               </div>
@@ -159,23 +159,41 @@
             <div id="wheelRollPrev">
             </div>
             <div class="wheel-roll">
-              <div class="wheel-roll__item wheel-roll__item--0 wheel-roll__item wheel-roll__item--active" value="0"><img class="wheel-roll__icon" src="img/wheel/tissue.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--0 wheel-roll__item wheel-roll__item--active" value="0">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/tissue.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--1" value="1"><img class="wheel-roll__icon" src="img/wheel/shopping-bag.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--1" value="1">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/shopping-bag.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--2" value="2"><img class="wheel-roll__icon" src="img/wheel/tool.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--2" value="2">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/tool.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--3" value="3"><img class="wheel-roll__icon" src="img/wheel/pocket.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--3" value="3">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/pocket.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--4" value="4"><img class="wheel-roll__icon" src="img/wheel/tissue.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--4" value="4">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/towels.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--5" value="5"><img class="wheel-roll__icon" src="img/wheel/image.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--5" value="5">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/image.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--6" value="6"><img class="wheel-roll__icon" src="img/wheel/load.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--6" value="6">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/weight.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--7" value="7"><img class="wheel-roll__icon" src="img/wheel/padlock.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--7" value="7">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/padlock.svg" alt="" role="presentation"/>
+                </div>
               </div>
-              <div class="wheel-roll__item wheel-roll__item--8" value="8"><img class="wheel-roll__icon" src="img/wheel/wind.svg" alt="" role="presentation"/>
+              <div class="wheel-roll__item wheel-roll__item--8" value="8">
+                <div><img class="wheel-roll__icon svg" src="img/wheel/wind.svg" alt="" role="presentation"/>
+                </div>
               </div>
             </div>
             <div class="wheel-text" id="wheel-text-0">
@@ -994,15 +1012,21 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__contacts-phones">
-            <div class="contacts-phones">
-              <div class="contacts-phones__text">
+            <div class="footer-contacts-phones">
+              <div class="footer-contacts-phones__text">
                 <p>Отдел продаж:
                 </p>
+                <p>Многоканальный:
+                </p>
               </div>
-              <div class="contacts-phones__numbers">
+              <div class="footer-contacts-phones__numbers">
                 <p>8920-732-47-12
                 </p>
-              </div><i class="contacts-phones__open fa fa-sort-desc fa-lg" aria-hidden="true"></i>
+                <p>8920-714-47-12
+                </p>
+                <p>+7(495) 055-4712
+                </p>
+              </div><i class="footer-contacts-phones__open fa fa-sort-desc fa-lg" aria-hidden="true"></i>
             </div>
           </div>
           <div class="footer__logo"><a class="logo" href="#"><img src="img/logo.png" alt="" role="presentation"/></a>
@@ -1015,6 +1039,9 @@
       </footer>
       <!-- build:js js/vendor.js-->
       <script src="js/jquery.min.js"></script>
+      <!-- endbuild-->
+      <!-- build:js js/main.js-->
+      <script src="js/svghack.js"></script>
       <!-- endbuild-->
       <!-- build:js js/main.js-->
       <script src="js/main.js"></script>
