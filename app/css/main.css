@@ -2198,7 +2198,7 @@ a {
     border-top: 685px solid transparent;
     border-right: 400px solid #e2d72f;
     border-bottom: 585px solid transparent;
-    z-index: -1; }
+    z-index: -5; }
   .how-to-head {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2351,7 +2351,7 @@ a {
       border-top: 990px solid transparent;
       border-right: 515px solid #23bad5;
       border-bottom: 0px solid transparent;
-      z-index: 2; }
+      z-index: -1; }
   .footer__contacts-phones {
     width: 40%; }
     .footer__contacts-phones .footer-contacts-phones {
