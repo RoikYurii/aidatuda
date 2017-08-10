@@ -31,16 +31,22 @@
   menuSlide();
 
   //popup(.ask)
-  function showPopup() {
-    $('.contacts-actions__ask').click(function (e) {
+  function popupActions() {
+    function showPopup() {
       $('.ask').fadeIn('fast');
-      // $('.ask').addClass('ask--active');
+    };
+
+    $('.contacts-actions__ask').click(function () {
+      showPopup()
+    });
+    $('.order-content__btn').click(function () {
+      showPopup()
     });
     $('.ask__close').click(function () {
       $('.ask').fadeOut('fast');
     });
   };
-  showPopup();
+  popupActions();
 
   //header-contacts
   function showContacts() {
@@ -136,28 +142,28 @@
           rotateWheel = 0;
           break;
         case '1':
-          rotateWheel = -36;
+          rotateWheel = -42;
           break;
         case '2':
-          rotateWheel = -71;
+          rotateWheel = -82;
           break;
         case '3':
-          rotateWheel = -109;
+          rotateWheel = -120;
           break;
         case '4':
-          rotateWheel = -143;
+          rotateWheel = -160;
           break;
         case '5':
-          rotateWheel = 143;
+          rotateWheel = 160;
           break;
         case '6':
-          rotateWheel = 109;
+          rotateWheel = 120;
           break;
         case '7':
-          rotateWheel = 71;
+          rotateWheel = 82;
           break;
         case '8':
-          rotateWheel = 36;
+          rotateWheel = 42;
           break;
        }
       return rotateWheel
@@ -168,7 +174,6 @@
       $wheelTexts.css('opacity', '0');
     }
     function rotate($this, rotateWheel) {
-      console.log(rotateWheel);
       rotateIcon = -rotateWheel;
       $wheelRollIcons.css('transform', 'rotateZ(' + rotateIcon + 'deg)');
       $wheelRoll.css('transform', 'rotateZ(' + rotateWheel + 'deg)');
