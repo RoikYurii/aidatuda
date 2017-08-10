@@ -1064,10 +1064,10 @@ a {
         top: 50%;
         margin-top: -6%; }
       .wheel-roll__item--1 {
-        left: 12%;
+        left: 11.7%;
         top: 15%; }
       .wheel-roll__item--8 {
-        left: 12%;
+        left: 11.7%;
         bottom: 15%; }
       .wheel-roll__item--2 {
         left: 38%;
@@ -1077,15 +1077,15 @@ a {
         bottom: 1%; }
       .wheel-roll__item--3 {
         right: 22%;
-        top: 7%; }
+        top: 6.5%; }
       .wheel-roll__item--6 {
         right: 22%;
-        bottom: 7%; }
+        bottom: 6.5%; }
       .wheel-roll__item--4 {
-        right: 3.5%;
+        right: 3.3%;
         top: 29%; }
       .wheel-roll__item--5 {
-        right: 3.5%;
+        right: 3.3%;
         bottom: 29%; }
   .wheel-text {
     position: absolute;
